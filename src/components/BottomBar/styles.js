@@ -1,11 +1,6 @@
 import styled from 'styled-components/native';
 import { LinearGradient } from 'expo-linear-gradient';
-
-export const Container = styled.View`
-    flex: 1;
-
-    background-color: #A2A2A2;
-`;
+import { Entypo } from '@expo/vector-icons';
 
 export const BottomMenu = styled.View`
     position: absolute;
@@ -41,11 +36,6 @@ export const MenuToggle = styled.TouchableOpacity`
     border: 6px solid #A2A2A2;
 `;
 
-export const IconImage = styled.Image`
-    width: ${props => props.size}px;
-    height: ${props => props.size}px;
-`;
-
 export const ButtonsContainer = styled.View`
     flex-direction: row;
     width: 100%;
@@ -59,4 +49,14 @@ export const ButtonsSeparator = styled.View`
     justify-content: space-evenly;
 `;
 
+export const Button = styled.TouchableOpacity`
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+`;
 
+export const Dot = styled(Entypo)`
+    color: #4D65E7;
+    position: absolute;
+    bottom: -8px;
+`;
